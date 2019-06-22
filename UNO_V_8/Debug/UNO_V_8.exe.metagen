@@ -1,0 +1,77 @@
+  UNO_V_8.Eleccion_color.resources - Embedded, ContainedInManifestFile, 
+  UNO_V_8.Menu_principal.resources - Embedded, ContainedInManifestFile, 
+  UNO_V_8.Registro_jugadores.resources - Embedded, ContainedInManifestFile, 
+  UNO_V_8.Tablero_de_juego.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly UNO_V_8, Version=0.0.*, Culture=Todos los idiomas (todos los países): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class UNO_V_8.Eleccion_color: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 opciones : Public
+  Methods:
+    Set_eleccion_color(): PrivateScope, Public, HideBySig
+Class UNO_V_8.Tablero_de_juego: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 numero : Public
+    Int32 opcion : Public
+    Int32 color : Public
+    Int32 tipo : Public
+    Int32 cantidad_repartidas : Public
+    Int32 persona_r : Public
+    Int32 aux_jugador : Public
+    Int32 aux_cartas : Public
+    Int32 cantidad_cartas : Public
+    Boolean repartir_cartas : Public
+    Boolean sentido_juego : Public
+    Int32 turno : Public
+    Boolean vez_por_turno : Public
+    Int32 ronda : Public
+    Int32 carta_mesa : Public
+    Int32 numero_carta_mesa : Public
+    Int32 color_carta_mesa : Public
+    Boolean carta_mesa_inicial : Public
+    Boolean carta_cambiada_comodin : Public
+    Boolean jugada : Public
+    Boolean sentido_de_juego : Public
+    baraja* objbaraja : Public
+    baraja_aux* obj_baraja_aux : Public
+    cartas* objcartas : Public
+    jugador* objjugador : Public
+    System.Drawing.Bitmap bmpCartas : Public
+    Arreglo_jugador* objarreglo_j : Public
+  Methods:
+    Get_cambio_de_color(Int32): PrivateScope, Public, HideBySig
+    settablero(Arreglo_jugador*): PrivateScope, Public, HideBySig
+    Setbaraja(baraja*): PrivateScope, Public, HideBySig
+    GetN_jugadores(): PrivateScope, Public, HideBySig
+Class UNO_V_8.Registro_jugadores: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 turno : Public
+    baraja* objbaraja : Public
+    jugador* objjugador : Public
+    cartas* objcartas : Public
+    Arreglo_jugador* obj_arreglo_jugador : Public
+    Arreglo_jugador* objarreglo_j : Public
+    Arreglo_jugador* objarreglo_aux : Public
+    UNO_V_8.Tablero_de_juego obj_tablero : Public
+Class UNO_V_8.Menu_principal: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
